@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Brand Vegetable Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Ashish Brand Vegetable Shop</h1>
+            <p>Fresh Vegetables At Your Doorstep</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="https://www.pexels.com/search/fresh%20vegetables/" target="_blank">Home</a></li>
+
+                <li><a href="https://www.pexels.com/search/vegetables/" target="_blank">Vegetables</a></li>
+
+                <li><a href="https://www.bigbasket.com/" target="_blank">Cart</a></li>
+
+                <li><a href="https://www.blinkit.com/" target="_blank">Checkout</a></li>
+
+                <li><a href="https://pay.google.com/" target="_blank">Payment</a></li>
+
+                <li><a href="https://www.google.com/search?q=fresh+vegetables+near+me" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <h2>100% Fresh & Organic Vegetables</h2>
+        <p>Order online and get fast delivery.</p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- VEGETABLES -->
+    <section id="vegetables">
+
+        <h2>Available Vegetables</h2>
+
+        <div class="products">
+
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Tomato</h3>
+                <p>₹40 / Kg</p>
+                <button onclick="addToCart('Tomato',40)">
+                Add To Cart
+            </button>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Potato</h3>
+                <p>₹30 / Kg</p>
+                <button onclick="addToCart('Potato',30)">
+                Add To Cart
+            </button>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Onion</h3>
+                <p>₹35 / Kg</p>
+                <button onclick="addToCart('Onion',35)">
+                Add To Cart
+            </button>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="">
+                <h3>Brinjal</h3>
+                <p>₹50 / Kg</p>
+                <button onclick="addToCart('Brinjal',50)">
+                Add To Cart
+            </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CART -->
+    <section id="cart">
+
+        <h2>Your Cart</h2>
+
+        <ul id="cartItems">
+
+        </ul>
+
+        <h3>Total Amount: ₹<span id="total">0</span></h3>
+
+    </section>
+
+    <!-- CHECKOUT -->
+    <section id="checkout">
+
+        <h2>Customer Details</h2>
+
+        <form>
+
+            <input type="text" placeholder="Enter Name" required>
+
+            <input type="tel" placeholder="Mobile Number" required>
+
+            <textarea placeholder="Delivery Address" required></textarea>
+
+            <button type="submit">
+            Proceed To Payment
+        </button>
+
+        </form>
+
+    </section>
+
+    <!-- PAYMENT -->
+    <section id="payment">
+
+        <h2>Scan QR & Pay</h2>
+
+        <img src="qr.jpg" alt="UPI QR" width="300">
+
+        <h3>Ashish Maddheshiya</h3>
+
+        <p>
+            UPI ID: ashishmaddheshiya9565-1@oksbi
+        </p>
+
+        <input type="text" placeholder="Enter Transaction ID">
+
+        <button>
+        Submit Payment Details
+    </button>
+
+    </section>
+
+    <!-- ORDER CONFIRMATION -->
+    <section>
+
+        <h2>Order Confirmation</h2>
+
+        <p>
+            After payment and verification, your order will be confirmed.
+        </p>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Phone: +91 9876543210</p>
+
+        <p>Email: support@ashishvegetableshop.com
+        </p>
+
+        <p>Lucknow, Uttar Pradesh</p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>
+            © 2026 Ashish Brand Vegetable Shop
+        </h3>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
